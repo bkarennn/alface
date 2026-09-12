@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alface & Sono</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🥬 Alface & Sono</h1>
+
+        <p>
+            Um projeto sobre alface crespa, lactucina e sua possível relação com o sono.
+        </p>
+    </header>
+
+
+    <nav>
+        <button onclick="mostrarSecao('inicio')">Início</button>
+
+        <button onclick="mostrarSecao('alface')">
+            Conheça a Alface
+        </button>
+
+        <button onclick="mostrarSecao('lactucina')">
+            Lactucina
+        </button>
+
+        <button onclick="mostrarSecao('cultivo')">
+            Nosso Cultivo
+        </button>
+
+        <button onclick="mostrarSecao('sono')">
+            Alface e Sono
+        </button>
+
+        <button onclick="mostrarSecao('quiz')">
+            Quiz
+        </button>
+    </nav>
+
+
+    <main>
+
+        <section id="inicio" class="secao ativa">
+
+            <h2>🌱 Bem-vindo!</h2>
+
+            <p>
+                Este site faz parte de um projeto de iniciação científica
+                sobre a alface crespa e compostos presentes na planta,
+                como a lactucina.
+            </p>
+
+            <div class="destaque">
+                <h3>Você sabia?</h3>
+
+                <p>
+                    A alface possui diferentes compostos naturais que
+                    vêm sendo estudados por sua possível relação com o sono.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section id="alface" class="secao">
+
+            <h2>🥬 Conheça a Alface</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Nome científico</h3>
+                    <p>Lactuca sativa</p>
+                </div>
+
+                <div class="card">
+                    <h3>Família</h3>
+                    <p>Asteraceae</p>
+                </div>
+
+                <div class="card">
+                    <h3>Tipo estudado</h3>
+                    <p>Alface crespa</p>
+                </div>
+
+            </div>
+
+            <p>
+                Aqui vocês poderão colocar informações sobre origem,
+                características, cultivo e composição da alface.
+            </p>
+
+        </section>
+
+
+        <section id="lactucina" class="secao">
+
+            <h2>🧪 O que é Lactucina?</h2>
+
+            <p>
+                A lactucina é um composto encontrado em plantas
+                do gênero Lactuca.
+            </p>
+
+            <p>
+                Nesta parte do site vocês poderão explicar o que ela é,
+                onde é encontrada e por que ela está sendo estudada.
+            </p>
+
+        </section>
+
+
+        <section id="cultivo" class="secao">
+
+            <h2>🌱 Nosso Cultivo</h2>
+
+            <div class="linha-tempo">
+
+                <div class="etapa">
+                    <h3>Dia 1</h3>
+                    <p>Plantio das sementes.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>Dia 7</h3>
+                    <p>Primeiras observações.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>Dia 14</h3>
+                    <p>Crescimento das folhas.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>Dia 21</h3>
+                    <p>Desenvolvimento da planta.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="sono" class="secao">
+
+            <h2>🌙 Alface e Sono</h2>
+
+            <p>
+                Aqui vocês podem explicar como a pesquisa relaciona
+                os compostos presentes na alface com mecanismos
+                ligados ao sono.
+            </p>
+
+            <div class="fluxo">
+
+                <div>🥬 Alface</div>
+
+                <span>↓</span>
+
+                <div>🧪 Compostos naturais</div>
+
+                <span>↓</span>
+
+                <div>🌙 Possível relação com o sono</div>
+
+            </div>
+
+        </section>
+
+
+        <section id="quiz" class="secao">
+
+            <h2>🧠 Teste seus conhecimentos</h2>
+
+            <p>
+                Qual composto estamos estudando neste projeto?
+            </p>
+
+            <button onclick="responder(false)">
+                Cafeína
+            </button>
+
+            <button onclick="responder(true)">
+                Lactucina
+            </button>
+
+            <button onclick="responder(false)">
+                Nicotina
+            </button>
+
+            <p id="respostaQuiz"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Projeto de Iniciação Científica • 2026 🌱
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
