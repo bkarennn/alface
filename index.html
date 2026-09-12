@@ -1,225 +1,177 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Alface & Sono</title>
-
+    <meta name="description" content="Projeto InovaSESI sobre alface crespa, lactucina e sua possível relação com o sono.">
+    <meta name="theme-color" content="#679436">
+    <title>Alface, lactucina e sono | InovaSESI</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <header>
-        <div class="marca">
-            <img src="assets/icone-alface.png" alt="" class="icone-alface" width="112" height="112">
-            <h1>Alface & Sono</h1>
-        </div>
-
-        <p>
-            Um projeto sobre alface crespa, lactucina e sua possível relação com o sono.
-        </p>
+    <header class="site-header" data-header>
+        <a class="brand" href="#inicio" aria-label="InovaSESI — voltar ao início">
+            <img src="assets/icone-alface.png" alt="" width="48" height="48">
+            <span><strong>InovaSESI</strong><small>caderno de pesquisa</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+            <span class="menu-toggle__label">Menu</span>
+            <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#alface">Sobre a alface</a>
+            <a href="#lactucina">Lactucina</a>
+            <a href="#sono">Sono</a>
+            <a href="#pesquisa">Pesquisa</a>
+            <a href="#curiosidades">Curiosidades</a>
+        </nav>
     </header>
 
+    <main id="conteudo">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <span class="hero__scribble hero__scribble--one" aria-hidden="true">✦</span>
+            <span class="hero__scribble hero__scribble--two" aria-hidden="true">✳</span>
+            <svg class="doodle hero__arrow" viewBox="0 0 130 90" aria-hidden="true"><path d="M8 14c27 2 60 15 70 40 5 12 1 22-8 27M61 68l10 13 16-6"/></svg>
 
-    <nav>
-        <button onclick="mostrarSecao('inicio')">Início</button>
-
-        <button onclick="mostrarSecao('alface')">
-            Conheça a Alface
-        </button>
-
-        <button onclick="mostrarSecao('lactucina')">
-            Lactucina
-        </button>
-
-        <button onclick="mostrarSecao('cultivo')">
-            Nosso Cultivo
-        </button>
-
-        <button onclick="mostrarSecao('sono')">
-            Alface e Sono
-        </button>
-
-        <button onclick="mostrarSecao('quiz')">
-            Quiz
-        </button>
-    </nav>
-
-
-    <main>
-
-        <section id="inicio" class="secao ativa">
-
-            <h2>🌱 Bem-vindo!</h2>
-
-            <p>
-                Este site faz parte de um projeto de iniciação científica
-                sobre a alface crespa e compostos presentes na planta,
-                como a lactucina.
-            </p>
-
-            <div class="destaque">
-                <h3>Você sabia?</h3>
-
-                <p>
-                    A alface possui diferentes compostos naturais que
-                    vêm sendo estudados por sua possível relação com o sono.
-                </p>
+            <div class="hero__paper reveal">
+                <span class="tape tape--pink" aria-hidden="true"></span>
+                <p class="eyebrow">Projeto científico • InovaSESI</p>
+                <h1 id="hero-title">Alface não é<br><em>só salada.</em></h1>
+                <p class="hero__intro">Descubra o que existe por trás da alface crespa, da lactucina e da relação dessa planta com o sono.</p>
+                <a class="button button--primary" href="#alface">Explorar pesquisa <span aria-hidden="true">↓</span></a>
+                <p class="hand-note">ciência que nasce da curiosidade</p>
             </div>
 
+            <figure class="hero__photo reveal reveal--delay">
+                <span class="photo-halo" aria-hidden="true"></span>
+                <img src="assets/recortes/alface-crespa.png" alt="Alface crespa verde vista de frente" width="657" height="561">
+                <figcaption>objeto de estudo</figcaption>
+            </figure>
+
+            <aside class="mini-note hero__note reveal" aria-label="Anotação">
+                <span class="mini-note__pin" aria-hidden="true"></span>
+                <strong>Uma folha,</strong><span>várias perguntas.</span>
+            </aside>
+            <svg class="doodle hero__leaf-doodle" viewBox="0 0 110 110" aria-hidden="true"><path d="M87 13C44 20 21 45 18 93c39-4 65-24 69-80Z"/><path d="M28 83c16-21 31-37 52-59M46 61l-2-22M59 47l19 2"/></svg>
         </section>
 
+        <div class="ticker" aria-hidden="true"><div><span>ALFACE CRESPA</span><i>✦</i><span>LACTUCINA</span><i>✦</i><span>SONO</span><i>✦</i><span>ALFACE CRESPA</span><i>✦</i><span>LACTUCINA</span><i>✦</i><span>SONO</span><i>✦</i></div></div>
 
-        <section id="alface" class="secao">
-
-            <h2>🥬 Conheça a Alface</h2>
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>Nome científico</h3>
-                    <p>Lactuca sativa</p>
-                </div>
-
-                <div class="card">
-                    <h3>Família</h3>
-                    <p>Asteraceae</p>
-                </div>
-
-                <div class="card">
-                    <h3>Tipo estudado</h3>
-                    <p>Alface crespa</p>
-                </div>
-
+        <section class="section lettuce-section" id="alface" aria-labelledby="alface-title">
+            <div class="section-heading reveal">
+                <span class="section-number">01</span>
+                <div><p class="eyebrow">primeira anotação</p><h2 id="alface-title">Conheça a <em>alface crespa</em></h2></div>
             </div>
 
-            <p>
-                Aqui vocês poderão colocar informações sobre origem,
-                características, cultivo e composição da alface.
-            </p>
-
-        </section>
-
-
-        <section id="lactucina" class="secao">
-
-            <h2>🧪 O que é Lactucina?</h2>
-
-            <p>
-                A lactucina é um composto encontrado em plantas
-                do gênero Lactuca.
-            </p>
-
-            <p>
-                Nesta parte do site vocês poderão explicar o que ela é,
-                onde é encontrada e por que ela está sendo estudada.
-            </p>
-
-        </section>
-
-
-        <section id="cultivo" class="secao">
-
-            <h2>🌱 Nosso Cultivo</h2>
-
-            <div class="linha-tempo">
-
-                <div class="etapa">
-                    <h3>Dia 1</h3>
-                    <p>Plantio das sementes.</p>
-                </div>
-
-                <div class="etapa">
-                    <h3>Dia 7</h3>
-                    <p>Primeiras observações.</p>
-                </div>
-
-                <div class="etapa">
-                    <h3>Dia 14</h3>
-                    <p>Crescimento das folhas.</p>
-                </div>
-
-                <div class="etapa">
-                    <h3>Dia 21</h3>
-                    <p>Desenvolvimento da planta.</p>
-                </div>
-
+            <div class="lettuce-collage">
+                <figure class="lettuce-cutout reveal">
+                    <span class="shape shape--pink" aria-hidden="true"></span>
+                    <img src="assets/recortes/alface-folha.png" alt="Folha de alface crespa recortada sobre a composição" width="512" height="535" loading="lazy">
+                    <figcaption class="label label--arrow">folhas onduladas</figcaption>
+                </figure>
+                <article class="paper paper--cream intro-paper reveal reveal--delay">
+                    <span class="tape tape--green" aria-hidden="true"></span>
+                    <p class="paper__kicker">Ficha de observação</p>
+                    <h3>Verde, fresca<br>e cheia de detalhes</h3>
+                    <p>A alface crespa é um tipo de <i>Lactuca sativa</i> reconhecido pelas bordas onduladas de suas folhas. É um alimento bastante consumido e também um ponto de partida para investigar substâncias produzidas naturalmente pela planta.</p>
+                    <!-- Revisar este texto caso a equipe queira incluir dados específicos do próprio cultivo. -->
+                </article>
+                <dl class="fact-tags reveal">
+                    <div class="fact-tag fact-tag--one"><dt>nome popular</dt><dd>alface</dd></div>
+                    <div class="fact-tag fact-tag--two"><dt>tipo estudado</dt><dd>crespa</dd></div>
+                    <div class="fact-tag fact-tag--three"><dt>gênero</dt><dd><i>Lactuca</i></dd></div>
+                </dl>
+                <aside class="scrap-note scrap-note--brown reveal"><span aria-hidden="true">↗</span><p><strong>Olha essa folha!</strong><br>Cada dobra cria uma textura diferente.</p></aside>
             </div>
-
         </section>
 
-
-        <section id="sono" class="secao">
-
-            <h2>🌙 Alface e Sono</h2>
-
-            <p>
-                Aqui vocês podem explicar como a pesquisa relaciona
-                os compostos presentes na alface com mecanismos
-                ligados ao sono.
-            </p>
-
-            <div class="fluxo">
-
-                <div>🥬 Alface</div>
-
-                <span>↓</span>
-
-                <div>🧪 Compostos naturais</div>
-
-                <span>↓</span>
-
-                <div>🌙 Possível relação com o sono</div>
-
+        <section class="section lactucin-section" id="lactucina" aria-labelledby="lactucina-title">
+            <div class="notebook reveal">
+                <span class="notebook__holes" aria-hidden="true"></span>
+                <span class="tape tape--neutral" aria-hidden="true"></span>
+                <div class="notebook__copy">
+                    <p class="eyebrow">palavra-chave da pesquisa</p>
+                    <h2 id="lactucina-title">O que é<br><em>lactucina?</em></h2>
+                    <p class="lead">A lactucina é um composto natural associado a plantas do gênero <i>Lactuca</i>.</p>
+                    <p>Ela aparece em pesquisas que investigam possíveis efeitos biológicos de substâncias presentes nessas plantas. Estudar essa relação exige observar evidências, condições e quantidades — sem transformar uma hipótese em promessa.</p>
+                    <div class="highlight-line"><span>assunto em investigação</span></div>
+                </div>
+                <div class="notebook__visual" aria-hidden="true">
+                    <span class="chem-label">LACTUCINA</span>
+                    <img src="assets/recortes/alface-crespa.png" alt="" width="657" height="561" loading="lazy">
+                    <svg class="doodle notebook__arrow" viewBox="0 0 120 100"><path d="M108 13C72 12 43 28 38 55c-3 14 5 25 18 30M44 73l12 12 14-9"/></svg>
+                </div>
+                <aside class="margin-note"><strong>Anotação:</strong><span>“possível efeito” não significa “efeito comprovado ao comer alface”.</span></aside>
             </div>
-
         </section>
 
-
-        <section id="quiz" class="secao">
-
-            <h2>🧠 Teste seus conhecimentos</h2>
-
-            <p>
-                Qual composto estamos estudando neste projeto?
-            </p>
-
-            <button onclick="responder(false)">
-                Cafeína
-            </button>
-
-            <button onclick="responder(true)">
-                Lactucina
-            </button>
-
-            <button onclick="responder(false)">
-                Nicotina
-            </button>
-
-            <p id="respostaQuiz"></p>
-
+        <section class="section sleep-section" id="sono" aria-labelledby="sono-title">
+            <div class="section-heading section-heading--light reveal">
+                <span class="section-number">02</span>
+                <div><p class="eyebrow">conectando as pistas</p><h2 id="sono-title">Alface <span>×</span> sono</h2></div>
+            </div>
+            <div class="investigation-board reveal">
+                <span class="board-pin board-pin--one" aria-hidden="true"></span><span class="board-pin board-pin--two" aria-hidden="true"></span>
+                <div class="clue clue--photo"><img src="assets/recortes/alface-folha.png" alt="Folha de alface crespa" width="512" height="535" loading="lazy"><strong>ALFACE</strong></div>
+                <span class="clue-arrow clue-arrow--one" aria-hidden="true">→</span>
+                <div class="clue clue--green"><span>compostos<br>naturais</span></div>
+                <span class="clue-arrow clue-arrow--two" aria-hidden="true">→</span>
+                <div class="clue clue--pink"><span>lactucina</span></div>
+                <span class="clue-arrow clue-arrow--three" aria-hidden="true">→</span>
+                <div class="clue clue--lined"><span>estudos sobre efeitos biológicos e sono</span></div>
+                <svg class="doodle board-circle" viewBox="0 0 190 100" aria-hidden="true"><path d="M12 56C23 12 157 2 178 42c22 43-122 65-161 31C7 65 7 59 12 56Z"/></svg>
+            </div>
+            <aside class="attention reveal"><span class="attention__burst" aria-hidden="true">!</span><div><h3>Mas atenção!</h3><p>Uma associação investigada pela ciência não significa que uma porção comum de alface funcione como remédio para dormir. A pesquisa observa possibilidades; não recomenda tratamento nem substitui orientação profissional.</p></div></aside>
         </section>
 
+        <section class="section research-section" id="pesquisa" aria-labelledby="pesquisa-title">
+            <div class="research-intro reveal">
+                <p class="eyebrow">nos bastidores do InovaSESI</p>
+                <h2 id="pesquisa-title">Nossa pesquisa,<br><em>página por página</em></h2>
+                <p>Este mural está pronto para receber o percurso real da equipe. Os campos marcados podem ser atualizados conforme o projeto avança.</p>
+                <span class="hand-note">em construção — como toda boa investigação</span>
+            </div>
+            <div class="research-wall">
+                <article class="research-paper research-paper--problem reveal"><span class="paper-index">01</span><p class="paper__kicker">Ponto de partida</p><h3>Problemática</h3><p>Que relações podem ser investigadas entre a alface crespa, seus compostos naturais e o sono?</p></article>
+                <article class="research-paper research-paper--hypothesis reveal reveal--delay"><span class="tape tape--pink" aria-hidden="true"></span><span class="paper-index">02</span><p class="paper__kicker">Nossa aposta inicial</p><h3>Hipótese</h3><p class="placeholder-copy">Texto da hipótese a ser inserido e revisado pela equipe.</p><!-- SUBSTITUIR: escreva aqui a hipótese validada pela equipe. --></article>
+                <article class="research-paper research-paper--goal reveal"><span class="paper-index">03</span><p class="paper__kicker">Onde queremos chegar</p><h3>Objetivo</h3><p>Investigar informações sobre a alface crespa, a lactucina e sua possível relação com o sono.</p></article>
+                <article class="research-paper research-paper--method reveal reveal--delay"><span class="paper-index">04</span><p class="paper__kicker">Como fizemos</p><h3>Metodologia</h3><p class="placeholder-copy">Registre aqui materiais, etapas, amostras e procedimentos do projeto.</p><!-- SUBSTITUIR: metodologia real do projeto. --></article>
+                <article class="research-paper research-paper--results reveal"><span class="tape tape--green" aria-hidden="true"></span><span class="paper-index">05</span><p class="paper__kicker">O que observamos</p><h3>Resultados</h3><p class="placeholder-copy">Espaço reservado para dados, registros e descobertas da equipe.</p><!-- SUBSTITUIR: resultados reais, sem extrapolar os dados obtidos. --></article>
+                <article class="research-paper research-paper--conclusion reveal reveal--delay"><span class="paper-index">06</span><p class="paper__kicker">O que aprendemos</p><h3>Conclusão</h3><p class="placeholder-copy">Síntese a ser escrita depois da análise dos resultados.</p><!-- SUBSTITUIR: conclusão validada pela equipe. --></article>
+            </div>
+        </section>
+
+        <section class="section curiosities-section" id="curiosidades" aria-labelledby="curiosidades-title">
+            <div class="section-heading reveal"><span class="section-number">03</span><div><p class="eyebrow">notas nas margens</p><h2 id="curiosidades-title">Curiosidades para <em>guardar</em></h2></div></div>
+            <div class="notes-scatter">
+                <article class="curiosity curiosity--cream reveal"><span class="tape tape--neutral" aria-hidden="true"></span><p class="paper__kicker">Você sabia?</p><h3>Nem toda alface tem a mesma forma.</h3><p>Existem diferentes tipos e aparências. Nosso olhar está voltado para a alface crespa.</p></article>
+                <article class="curiosity curiosity--pink reveal reveal--delay"><svg class="doodle curiosity__star" viewBox="0 0 80 80" aria-hidden="true"><path d="m40 5 7 25 23-12-17 22 22 10-28-2 5 27-12-24-19 19 14-25-29-1 28-8L17 14l20 18Z"/></svg><p class="paper__kicker">Para investigar</p><h3>Qual parte da planta concentra os compostos estudados?</h3><p>Uma pergunta simples pode abrir novos caminhos para a pesquisa.</p></article>
+                <article class="curiosity curiosity--green reveal"><p class="paper__kicker">Anotação da pesquisa</p><h3>Ciência também é saber dizer “ainda não sabemos”.</h3><p>Resultados precisam ser observados, comparados e interpretados com cuidado.</p></article>
+            </div>
+        </section>
+
+        <section class="section diary-section" id="diario" aria-labelledby="diario-title">
+            <div class="diary-heading reveal"><p class="eyebrow">álbum em andamento</p><h2 id="diario-title">Diário do projeto</h2><p>Um espaço para acompanhar cultivo, experimentos e os bastidores da equipe.</p></div>
+            <!-- Para adicionar uma foto: duplique um <figure class="polaroid">, troque src, alt e legenda. -->
+            <div class="polaroid-grid">
+                <figure class="polaroid polaroid--one reveal"><span class="tape tape--photo" aria-hidden="true"></span><img src="assets/originals/alface-crespa-original.jpeg" alt="Alface crespa usada como referência no projeto" width="736" height="736" loading="lazy"><figcaption>Primeiro olhar para a alface crespa</figcaption></figure>
+                <figure class="polaroid polaroid--two reveal reveal--delay"><span class="tape tape--photo" aria-hidden="true"></span><img src="assets/originals/alface-folha-original.jpeg" alt="Folha de alface crespa usada como referência no projeto" width="614" height="614" loading="lazy"><figcaption>Observando bordas e nervuras</figcaption></figure>
+                <figure class="polaroid polaroid--empty reveal"><div class="photo-placeholder" role="img" aria-label="Espaço reservado para uma foto do cultivo"><span>+</span><small>foto do cultivo</small></div><figcaption>Próximo registro</figcaption></figure>
+                <figure class="polaroid polaroid--empty polaroid--four reveal reveal--delay"><div class="photo-placeholder" role="img" aria-label="Espaço reservado para uma foto da equipe"><span>+</span><small>foto da equipe</small></div><figcaption>Quem faz a pesquisa</figcaption></figure>
+            </div>
+        </section>
     </main>
 
-
-    <footer>
-
-        <p>
-            Projeto de Iniciação Científica • 2026 🌱
-        </p>
-
+    <footer class="site-footer">
+        <div class="footer__mark"><img src="assets/icone-alface.png" alt="" width="64" height="64" loading="lazy"><div><strong>Projeto InovaSESI</strong><span>alface crespa • lactucina • sono</span></div></div>
+        <div class="footer__copy"><p>Pesquisa desenvolvida por estudantes.</p><p class="team-names">Equipe: nomes a adicionar</p><!-- SUBSTITUIR: adicione os nomes da equipe acima. --></div>
+        <p class="footer__year">© <span data-year>2026</span> • Feito com curiosidade</p>
     </footer>
-
-
-    <script src="script.js"></script>
-
 </body>
-
 </html>
