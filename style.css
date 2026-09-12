@@ -23,7 +23,29 @@ header {
 header h1 {
     font-size: 45px;
 
+    margin: 0;
+}
+
+
+.marca {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+
     margin-bottom: 10px;
+}
+
+
+.icone-alface {
+    width: 112px;
+
+    height: 112px;
+
+    object-fit: contain;
 }
 
 
@@ -224,4 +246,23 @@ footer {
     padding: 20px;
 
     margin-top: 40px;
+}
+
+
+@media (max-width: 520px) {
+    .marca {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .icone-alface {
+        width: 92px;
+
+        height: 92px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
 }
