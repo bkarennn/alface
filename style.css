@@ -290,11 +290,13 @@ h1 em, h2 em { position: relative; color: var(--green-dark); font-weight: 500; }
 .clue--photo strong { margin-top: 8px; font-family: var(--hand); }
 .clue--green { background: var(--green-light); font-family: var(--serif); font-size: 1.22rem; transform: rotate(3deg); }
 .clue--pink { min-height: 110px; border-radius: 50%; background: var(--pink); font-family: var(--hand); font-size: 1.3rem; transform: rotate(-4deg); }
-.clue--lined { background: repeating-linear-gradient(var(--paper) 0 24px, #d8d1bd 25px); font-family: var(--serif); font-size: 1.08rem; transform: rotate(2deg); }
+.clue--lined { padding: 38px 30px; background: repeating-linear-gradient(var(--paper) 0 24px, #d8d1bd 25px); font-family: var(--serif); font-size: 1.08rem; transform: rotate(.4deg); }
+.clue--lined::before { position: absolute; top: -9px; left: 50%; width: 58px; height: 20px; background: rgba(211, 199, 167, .75); transform: translateX(-50%) rotate(-3deg); content: ""; }
 .clue-arrow { color: var(--brown); font-family: var(--hand); font-size: 2rem; font-weight: 700; transform: rotate(-8deg); }
 .clue-arrow--two { transform: rotate(6deg); }
 .clue-arrow--three { transform: rotate(-3deg); }
-.board-circle { position: absolute; right: 4%; bottom: 5%; width: 200px; color: var(--green); }
+.clue--lined .board-circle { position: absolute; inset: 5%; width: 90%; height: 90%; color: var(--green); pointer-events: none; }
+.board-circle path { vector-effect: non-scaling-stroke; }
 .attention { display: flex; max-width: 800px; align-items: center; gap: 25px; margin: 68px auto 0; padding: 27px 35px; color: var(--brown); background: var(--pink); box-shadow: 8px 9px 0 var(--green); transform: rotate(-1deg); }
 .attention__burst { display: grid; width: 73px; height: 73px; flex: 0 0 auto; place-items: center; color: var(--cream); background: var(--green); font-family: var(--serif); font-size: 2.7rem; font-weight: 800; clip-path: polygon(50% 0,61% 29%,85% 9%,75% 38%,100% 44%,73% 56%,94% 82%,63% 70%,53% 100%,43% 71%,15% 91%,28% 61%,0 52%,30% 42%,8% 17%,39% 31%); }
 .attention h3 { margin-bottom: 8px; font-family: var(--serif); font-size: 2rem; }
