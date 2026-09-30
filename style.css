@@ -186,7 +186,12 @@ h1 em, h2 em { position: relative; color: var(--green-dark); font-weight: 500; }
 .mini-note { position: absolute; z-index: 5; display: grid; padding: 20px 24px; color: var(--brown); background: var(--pink); font-family: var(--hand); box-shadow: var(--soft-shadow); transform: rotate(5deg); }
 .mini-note__pin, .board-pin { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: var(--brown); box-shadow: 1px 2px 2px rgba(0,0,0,.2); }
 .mini-note__pin { top: 8px; left: 50%; }
-.hero__note { right: 6%; bottom: 64px; }
+.hero__note {
+    position: relative;
+    grid-column: 2;
+    justify-self: end;
+    margin-top: 32px;
+}
 .hero__scribble { position: absolute; z-index: 1; font-family: var(--serif); }
 .hero__scribble--one { top: 18%; left: 4%; color: var(--cream); font-size: 4rem; transform: rotate(13deg); }
 .hero__scribble--two { top: 25%; right: 4%; color: var(--pink); font-size: 3.5rem; }
